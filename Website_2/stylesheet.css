@@ -1,0 +1,140 @@
+
+/* I've used more css rules and code than necessary but when I've tried cutting it down where it seems to be redundant 
+things move around unexpectedly. When I remove the container div that has a height of 100% just like the body tag, 
+the black bar at the bottom of content disappears. Ideally that would be at bottom of page anyway. 
+I don't understand a lot about how things work in relation one another. Spelling errors might be some of it, but I know there is more to it than that! */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #234567;
+}
+
+#container {
+  height: 100%;
+}
+#header {
+    display:block;
+    float:left;
+    background-color: #000000;
+    text-align:bottom;
+}
+h1 {
+    color:#ffffff;
+    margin-top: 60px;
+    margin-left: 64px;
+    margin-right:64px;
+    font-size: 48px;
+    font-weight: 100;
+    font-family: helvetica;
+    background-color: rgba(0,0,0,1);
+}
+
+ul {
+    list-style-type: none;
+    position: fixed;
+    margin-top: -15px;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+li {
+    display: inline;
+    border: 1px solid #000000;
+    padding: 7px;
+    border-radius: 5px 5px;
+    background-color: #FDE311;
+}
+.nav li {
+    display:inline;
+    top:5px;
+    left:70%;
+    border: 2px solid #181F2C;
+    color: #000000;
+    font-size: 11px;
+    font-weight:bold;
+    background-color: #FDE311;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.nav {
+    position: fixed;
+    top:10px;
+    left:70%;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight:bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.nav a {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight:bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+li { 
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Helvetica;
+    text-transform: uppercase;
+}
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-align: left;
+  height: 20px;
+  margin: 0;
+  color: #acd1b2;
+}
+
+.middle {
+    display:block;
+    height: 800px;
+    background-image: url('photos/photo_1.jpg');
+}
+
+.middle #content p {
+    position:relative;
+    float:left;
+    font-size:16px;
+    font-weight: 100;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    line-height: 140%;
+    color:#ffffff;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    padding: 64px;
+    max-width: 600px;
+    min-height: 100%;
+    width: 100%;
+}
+.footer {
+    position:relative;
+    background-color:#000000;
+    height:70px;
+}
+.button li {
+    display: inline;
+    font-size: 11px;
+    font-family: Helvetica;
+    font-weight:bold;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    margin-left:20px;
+    padding: 8px;
+    border-radius: 5px 5px;
+    background-color: #FDE311;
+}
